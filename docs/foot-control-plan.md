@@ -1,6 +1,6 @@
 # Grotto foot control plan
 
-Written 4 November 2026. Proposed, following the house rules and Prism Patch's `PedalControl`. Works on the M-Vave Chocolate Plus and M-Audio EX-P with no mapping.
+Written 4 November 2026. Built in the first version, following the house rules and Prism Patch's `PedalControl`. Works on the M-Vave Chocolate Plus and M-Audio EX-P with no mapping.
 
 ## Footswitch defaults
 
@@ -30,7 +30,7 @@ Why:
 
 CC 11 on channel 16. Moves **Drag** through the current Mode, as V3's jack does. Heel is full anticlockwise (scattered, long, gritty, pitch down), toe is full clockwise (tight reverb). The curve is exponential, so equal travel gives equal pitch change and the sweep feels even across the whole pedal rather than all happening at one end. The pedal's party trick, the pitch dive while the cave rings, is a slow rock back on the heel.
 
-The PITCH QUANTIZE chip on the expression bar picks the Mode, and the menu reaches Length, Reflect, Mix and Dampen as alternative targets. Heel and toe calibration (the EX-P reads backwards on the Chocolate Plus, which Calibrate fixes), smoothing and curve come from `PedalControl`.
+The Mode chip under the Drag dial picks how the steps fall (the sweep stays even in pitch in every mode; the stepped modes land on their intervals), and the expression bar's menu reaches Reflect, Length, Mix, Dampen and Diffuse as alternative targets. On Reflect, most of the travel sits near the edge where the cave starts to sing. Heel and toe calibration (the EX-P reads backwards on the Chocolate Plus, which Calibrate fixes), smoothing and curve come from `PedalControl`.
 
 ## Original pedal MIDI map
 
@@ -38,4 +38,4 @@ None. The pedal has no MIDI, so nothing can clash with the footswitch and expres
 
 ## Tests
 
-`Tests/FootTest.cpp` will cover tap, hold, A+B and C+D in both orders, C held then D (Freeze plus Dry Kill, not Keeper), the 1 second Keeper hold, the Drag expression curve in each Mode, the remote parameters, and a clash test: sustain (CC 64), mod wheel (CC 1), and CC 20 to 23 and 11 on other channels change nothing.
+`Tests/FootTest.cpp` covers tap, hold, A+B and C+D in both orders, C held then D (Freeze plus Dry Kill, not Keeper), the 1 second Keeper hold, the Drag expression curve in each Mode, the remote parameters, and a clash test: sustain (CC 64), mod wheel (CC 1), and CC 20 to 23 and 11 on other channels change nothing.
