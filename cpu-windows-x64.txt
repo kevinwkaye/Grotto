@@ -1,0 +1,40 @@
+01_defaults                     48000 Hz  ok 
+02_length_short                 48000 Hz  ok 
+03_length_long                  48000 Hz  ok 
+04_diffuse_sharp                48000 Hz  ok 
+05_diffuse_wash                 48000 Hz  ok 
+06_dampen_dark                  48000 Hz  ok 
+07_dampen_bright                48000 Hz  ok 
+08_drag_tight                   48000 Hz  ok 
+09_drag_scattered               48000 Hz  ok 
+10_mix_zero_is_dry              48000 Hz  ok 
+11_mix_full                     48000 Hz  ok 
+12_drag_sweep_warp              48000 Hz  ok 
+13_mode_0_sweep                 48000 Hz  ok 
+13_mode_1_sweep                 48000 Hz  ok 
+13_mode_2_sweep                 48000 Hz  ok 
+13_mode_3_sweep                 48000 Hz  ok 
+13_mode_4_sweep                 48000 Hz  ok 
+13_mode_5_sweep                 48000 Hz  ok 
+13_mode_6_sweep                 48000 Hz  ok 
+13_mode_7_sweep                 48000 Hz  ok 
+13_mode_8_sweep                 48000 Hz  ok 
+14_reflect_sings                48000 Hz  ok 
+15_reflect_below_edge           48000 Hz  ok 
+16_runaway_oscillates           48000 Hz  ok 
+17_runaway_scattered_bend       48000 Hz  ok 
+18_tame_stops_it                48000 Hz  ok 
+19_freeze_holds                 48000 Hz  ok 
+20_bypass_cuts                  48000 Hz  ok 
+21_bypass_trails                48000 Hz  ok 
+22_dry_kill                     48000 Hz  ok 
+23_bass_low_end_clean           48000 Hz  ok 
+24_bass_runaway_no_sub          48000 Hz  ok 
+25_bass_dry_kill_keeps_lows     48000 Hz  ok 
+26_mono                         48000 Hz  ok 
+
+CPU per instance at 48 kHz (one core, scattered Drag with the grit clock, Reflect high):
+   64 samples: 2.05%
+  128 samples: 1.72%
+
+PASSED: 0 failed
