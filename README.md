@@ -87,7 +87,16 @@ Every control, every footswitch job and Keeper are in one parameter list that a 
 
 ## CPU
 
-Per instance, one core, scattered Drag with the grit clock and Reflect high (the heaviest case). Every build writes fresh figures for Windows x64 and Linux ARM64 to `cpu-windows-x64.txt` and `cpu-linux-arm64.txt` on the builds branch.
+Per instance, one core, scattered Drag with the grit clock and Reflect high (the heaviest case):
+
+| Machine | 48 kHz, 64 samples | 48 kHz, 128 samples |
+| --- | --- | --- |
+| Windows x64, GitHub runner | 1.51% | 1.53% |
+| Linux ARM64, GitHub runner | 1.94% | 1.92% |
+
+Measured for v0.1 on 4 November 2026. A Raspberry Pi 5 core is slower than these runners, so expect a few times these figures there, still small. The Windows build also passes pluginval at strictness level 5.
+
+Every build writes fresh figures for Windows x64 and Linux ARM64 to `cpu-windows-x64.txt` and `cpu-linux-arm64.txt` on the builds branch.
 
 ## Building
 
