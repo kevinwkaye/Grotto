@@ -70,7 +70,11 @@ See `docs/foot-control-plan.md`.
 | Footswitch job wiring, runaway hold, Tame, Freeze, bypass with trails | OilSlick | B's runaway, Tame on A+B, C's Freeze and A's bypass, with the pair-undo logic |
 | Pebble, flip cards, clock-face knobs, panel palette | Murmur, Speckle and Jetstream | The look |
 
-The swarm is a good candidate to move into a shared header later, so Murmur's Reverb could use the same code, but Grotto ships with its own copy first so nothing in Murmur changes. Vesper isn't among the repositories this account can reach, so I couldn't check it.
+The swarm lives in its own header (`Source/engine/Swarm.h`) with no Grotto-specific code, so it can be copied as the starting point for Vesper (kevinwkaye/Monolith, empty as of 4 November 2026) and later shared with Murmur's Reverb. Grotto ships with its own copy first so nothing in Murmur changes.
+
+## Decided (Kevin, 4 November 2026)
+
+V3, with expression on Drag. Stereo, with a Mono switch for pedal-exact behaviour. In Bass mode, Dry Kill keeps the dry signal below 120 Hz so the fundamental stays solid under the wash. Footswitches as in the foot control plan.
 
 ## Family conventions
 
